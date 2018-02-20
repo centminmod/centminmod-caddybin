@@ -8,7 +8,113 @@ Source compile built Caddy 64bit binaries on CentOS 7.4 64bit system for [Centmi
 * source/bin/0.10.10/gcc4.8.5/caddy.zip - Caddy binary built using system GCC 4.8.5 compiler
 * source/bin/0.10.10/gcc7.2.1/caddy-gcc7.zip - Caddy binary built using GCC 7.2.1 compiler
 * source/bin/0.10.10/clang4.0.1/caddy-clang4.zip - Caddy binary built using Clang 4.0.1 compiler
+* source/bin/0.10.11/gcc4.8.5/caddy.zip - Caddy binary built using system GCC 4.8.5 compiler
+* source/bin/0.10.11/gcc7.2.1/caddy-gcc7.zip - Caddy binary built using GCC 7.2.1 compiler
+* source/bin/0.10.11/clang4.0.1/caddy-clang4.zip - Caddy binary built using Clang 4.0.1 compiler
 
 ## Benchmarks
 
 * [Caddy HTTP/2 server & benchmarks - Part 2](https://community.centminmod.com/threads/caddy-http-2-server-benchmarks-part-2.12873/)
+
+## Caddy Plugins
+
+```
+/usr/local/bin/caddy -version
+Caddy 0.10.11 (+d3f338d Tue Feb 20 20:49:54 UTC 2018) (unofficial)
+2 files changed, 50 insertions(+)
+caddy/caddymain/run.go
+caddyhttp/httpserver/plugin.go
+```
+
+```
+/usr/local/bin/caddy -plugins
+Server types:
+  http
+
+Caddyfile loaders:
+  short
+  flag
+  default
+
+Other plugins:
+  http.authz
+  http.awses
+  http.awslambda
+  http.basicauth
+  http.bind
+  http.browse
+  http.cache
+  http.cgi
+  http.cors
+  http.datadog
+  http.errors
+  http.expires
+  http.expvar
+  http.ext
+  http.fastcgi
+  http.filemanager
+  http.filter
+  http.forwardproxy
+  http.git
+  http.gopkg
+  http.gzip
+  http.header
+  http.hugo
+  http.index
+  http.internal
+  http.ipfilter
+  http.jekyll
+  http.jsonp
+  http.jwt
+  http.limits
+  http.locale
+  http.log
+  http.login
+  http.mailout
+  http.markdown
+  http.mime
+  http.minify
+  http.multipass
+  http.nobots
+  http.oauth
+  http.pprof
+  http.prometheus
+  http.proxy
+  http.proxyprotocol
+  http.push
+  http.ratelimit
+  http.realip
+  http.reauth
+  http.redir
+  http.request_id
+  http.restic
+  http.rewrite
+  http.root
+  http.search
+  http.status
+  http.templates
+  http.timeouts
+  http.upload
+  http.webdav
+  http.websocket
+  on
+  shutdown
+  startup
+  tls
+  tls.dns.azure
+  tls.dns.cloudflare
+  tls.dns.digitalocean
+  tls.dns.dnsmadeeasy
+  tls.dns.dyn
+  tls.dns.godaddy
+  tls.dns.googlecloud
+  tls.dns.linode
+  tls.dns.namecheap
+  tls.dns.ns1
+  tls.dns.ovh
+  tls.dns.powerdns
+  tls.dns.rackspace
+  tls.dns.route53
+  tls.dns.vultr
+  tls.storage.file
+```
