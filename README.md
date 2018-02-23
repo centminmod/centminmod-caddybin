@@ -12,6 +12,10 @@ Source compile built Caddy 64bit binaries on CentOS 7.4 64bit system for [Centmi
 * source/bin/0.10.11/gcc7.2.1/caddy-gcc7.zip - Caddy binary built using GCC 7.2.1 compiler
 * source/bin/0.10.11/gcc8.0.1/caddy-gcc8.zip - Caddy binary built using GCC 8.0.1 Feb 18th, 2018 built compiler
 * source/bin/0.10.11/clang4.0.1/caddy-clang4.zip - Caddy binary built using Clang 4.0.1 compiler
+* source/bin/0.10.11/gcc4.8.5-nofilebrowser/caddy.zip - Caddy binary built using system GCC 4.8.5 compiler. Without filemanager, hugo, jekyll plugins.
+* source/bin/0.10.11/gcc7.2.1-nofilebrowser/caddy-gcc7.zip - Caddy binary built using GCC 7.2.1 compiler. Without filemanager, hugo, jekyll plugins.
+* source/bin/0.10.11/gcc8.0.1-nofilebrowser/caddy-gcc8.zip - Caddy binary built using GCC 8.0.1 Feb 18th, 2018 built compiler. Without filemanager, hugo, jekyll plugins.
+* source/bin/0.10.11/clang4.0.1-nofilebrowser/caddy-clang4.zip - Caddy binary built using Clang 4.0.1 compiler. Without filemanager, hugo, jekyll plugins.
 
 ## Benchmarks
 
