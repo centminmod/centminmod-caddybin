@@ -16,6 +16,9 @@ Source compile built Caddy 64bit binaries on CentOS 7.4 64bit system for [Centmi
 * source/bin/0.10.11/gcc7.2.1-nofilebrowser/caddy-gcc7.zip - Caddy binary built using GCC 7.2.1 compiler. Without filemanager, hugo, jekyll plugins.
 * source/bin/0.10.11/gcc8.0.1-nofilebrowser/caddy-gcc8.zip - Caddy binary built using GCC 8.0.1 Feb 18th, 2018 built compiler. Without filemanager, hugo, jekyll plugins.
 * source/bin/0.10.11/clang4.0.1-nofilebrowser/caddy-clang4.zip - Caddy binary built using Clang 4.0.1 compiler. Without filemanager, hugo, jekyll plugins.
+* source/bin/0.11.3/clang5.0.1/caddy-clang5.zip - Caddy binary built using Clang 5.0.1 compiler
+* source/bin/0.11.3/gcc4.8.5/caddy.zip - Caddy binary built using system GCC 4.8.5 compiler
+* source/bin/0.11.3/gcc7.3.1/caddy-gcc7.zip - Caddy binary built using GCC 7.3.1 compiler
 
 ## Benchmarks
 
@@ -25,10 +28,9 @@ Source compile built Caddy 64bit binaries on CentOS 7.4 64bit system for [Centmi
 
 ```
 /usr/local/bin/caddy -version
-Caddy 0.10.11 (+d3f338d Tue Feb 20 20:49:54 UTC 2018) (unofficial)
-2 files changed, 50 insertions(+)
+Caddy 0.11.3 (+39c5d6b Fri Feb 15 08:48:22 UTC 2019) (unofficial)
+1 file changed, 46 insertions(+), 1 deletion(-)
 caddy/caddymain/run.go
-caddyhttp/httpserver/plugin.go
 ```
 
 ```
@@ -57,19 +59,16 @@ Other plugins:
   http.expvar
   http.ext
   http.fastcgi
-  http.filemanager
+  http.filebrowser
   http.filter
   http.forwardproxy
   http.git
   http.gopkg
   http.gzip
   http.header
-  http.hugo
   http.index
   http.internal
   http.ipfilter
-  http.jekyll
-  http.jsonp
   http.jwt
   http.limits
   http.locale
@@ -81,7 +80,6 @@ Other plugins:
   http.minify
   http.multipass
   http.nobots
-  http.oauth
   http.pprof
   http.prometheus
   http.proxy
@@ -96,6 +94,7 @@ Other plugins:
   http.rewrite
   http.root
   http.search
+  http.secrets
   http.status
   http.templates
   http.timeouts
@@ -103,9 +102,8 @@ Other plugins:
   http.webdav
   http.websocket
   on
-  shutdown
-  startup
   tls
+  tls.cluster.file
   tls.dns.azure
   tls.dns.cloudflare
   tls.dns.digitalocean
@@ -121,5 +119,4 @@ Other plugins:
   tls.dns.rackspace
   tls.dns.route53
   tls.dns.vultr
-  tls.storage.file
 ```
