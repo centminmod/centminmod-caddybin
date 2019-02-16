@@ -19,9 +19,9 @@ Source compile built Caddy 64bit binaries on CentOS 7.4 64bit system for [Centmi
 * source/bin/0.11.3/clang5.0.1/caddy-clang5.zip - Caddy binary built using Clang 5.0.1 compiler. Without deprecated hugo, jekyll plugins and filemanager
 * source/bin/0.11.3/gcc4.8.5/caddy.zip - Caddy binary built using system GCC 4.8.5 compiler. Without deprecated hugo, jekyll plugins and filemanager
 * source/bin/0.11.3/gcc7.3.1/caddy-gcc7.zip - Caddy binary built using GCC 7.3.1 compiler. Without deprecated hugo, jekyll plugins and filemanager
-* source/bin/0.11.4/clang5.0.1/caddy-clang5.zip - Caddy binary built using Clang 5.0.1 compiler. Without deprecated hugo, jekyll plugins and filemanager.
-* source/bin/0.11.4/gcc4.8.5/caddy.zip - Caddy binary built using system GCC 4.8.5 compiler. Without deprecated hugo, jekyll plugins and filemanager.
-* source/bin/0.11.4/gcc7.3.1/caddy-gcc7.zip - Caddy binary built using GCC 7.3.1 compiler. Without deprecated hugo, jekyll plugins and filemanager.
+* source/bin/0.11.4/clang5.0.1/caddy-clang5.zip - Caddy binary built using Clang 5.0.1 compiler. Without deprecated hugo, jekyll plugins and filemanager. Add geoip & s3browser plugins.
+* source/bin/0.11.4/gcc4.8.5/caddy.zip - Caddy binary built using system GCC 4.8.5 compiler. Without deprecated hugo, jekyll plugins and filemanager. Add geoip & s3browser plugins.
+* source/bin/0.11.4/gcc7.3.1/caddy-gcc7.zip - Caddy binary built using GCC 7.3.1 compiler. Without deprecated hugo, jekyll plugins and filemanager. Add geoip & s3browser plugins.
 
 ## Benchmarks
 
@@ -31,13 +31,13 @@ Source compile built Caddy 64bit binaries on CentOS 7.4 64bit system for [Centmi
 
 ```
 /usr/local/bin/caddy -version
-Caddy 0.11.4 (+c1d6c92 Sat Feb 16 06:49:05 UTC 2019) (unofficial)
-1 file changed, 44 insertions(+), 1 deletion(-)
+Caddy 0.11.4 (+33b00dc Sat Feb 16 15:44:48 UTC 2019) (unofficial)
+1 file changed, 46 insertions(+), 1 deletion(-)
 caddy/caddymain/run.go
 ```
 
 ```
-/usr/local/bin/caddy -plugins
+/usr/local/bin/caddy -plugins/usr/local/bin/caddy -plugins
 Server types:
   http
 
@@ -64,6 +64,7 @@ Other plugins:
   http.fastcgi
   http.filter
   http.forwardproxy
+  http.geoip
   http.git
   http.gopkg
   http.grpc
@@ -95,6 +96,7 @@ Other plugins:
   http.restic
   http.rewrite
   http.root
+  http.s3browser
   http.secrets
   http.status
   http.templates
